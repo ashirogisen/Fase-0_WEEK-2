@@ -11,7 +11,7 @@ DISPLAY "resultan gaya (newton)"
 
 STORE "tahun" to any number
 
-IF "tahun" mod 4 = 0 AND “tahun” mod 100 ≠ 0 OR “tahun” mod 4 = 0 AND “tahun” mod 100 = 0 AND “tahun” mod 400 = 0
+IF ("tahun" mod 4 = 0 AND “tahun” mod 100 ≠ 0) OR (“tahun” mod 4 = 0 AND “tahun” mod 100 = 0 AND “tahun” mod 400 = 0)
   DISPLAY "Tahun yang anda input termasuk Tahun Kabisat"
 ELSE
   DISPLAY "Tahun yang anda input tidak termasuk Tahun Kabisat."
