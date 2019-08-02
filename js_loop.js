@@ -1,38 +1,47 @@
 //1. Melakukan Looping Menggunakan While
-var deret = 0;
-var deret2 = 22;
+var deret = 1;
+
 console.log("LOOPING PERTAMA");
-while(deret < 20) { // Loop akan terus berjalan selama nilai deret masih di atas 0
-  deret=deret + 2;
-  console.log(deret + " - I love Coding");
-}
-console.log("LOOPING KEDUA");
-while(deret2 > 2) { // Loop akan terus berjalan selama nilai deret masih di atas 0
-    deret2=deret2 - 2;
-    console.log(deret2 + " - I will become fullstack developer");
+while(deret <= 20) { // Loop akan terus berjalan selama nilai deret masih di atas 0
+  if (deret % 2 === 0) {
+		console.log(deret + ' - I love coding');
   }
-console.log();
+  deret++;
+}
+console.log('');
+
+console.log('LOOPING KEDUA');
+while (deret >= 2) {
+	if (deret % 2 === 0) {
+		console.log(deret + ' - I will become fullstack developer');
+	}
+	deret--;
+}
+console.log('');
 
 
 //2. Melakukan Looping Menggunakan For
 console.log("LOOPING PERTAMA");
 for(var angka = 1; angka <= 20; angka++) {
-    console.log(angka + " - I love coding");
-  }
+  console.log(angka + " - I love coding");
+}
+
+console.log('');
 console.log("LOOPING KEDUA");
-for(var angka2 = 20; angka2 > 0; angka2--){
-    console.log(angka2 + " - I will become fullstack developer");
+for(var angka2 = 20; angka2 > 0; angka2--) {
+  console.log(angka2 + " - I will become fullstack developer");
 }
 console.log();
 
 
 //3. Angka Ganjil dan Genap
-for(i = 1; i <= 100; i++){
-  if(i % 2 === 0){
-      console.log(i + " = GENAP");
+for(i = 1; i <= 100; i++) {
+  console.log('counter sekarang = ' + i);
+  if(i % 2 === 0) {
+    console.log("GENAP");
   }
-  else{
-      console.log(i + " = GANJIL");
+  else {
+    console.log("GANJIL");
   }
 
 }
@@ -40,21 +49,27 @@ console.log();
 
 //3B
 
-for (i = 1; i <= 100; i++){
-  if(i % 2 === 0){
-      console.log(i + " KELIPATAN 2");
-  }
+for (var i = 1; i <= 100; i+=2) {
+	console.log('counter sekarang = ' + i);
+    if (i % 3 === 0) {
+      console.log(i + ' KELIPATAN 3');
+    }
+}
+console.log('');
+
+for (var i = 1; i <= 100; i+=5) {
+	console.log('counter sekarang = ' + i);
+    if (i % 6 === 0) {
+      console.log(i + ' KELIPATAN 6');
+    }
+}	
+console.log('');
+
+for (var i = 1; i <= 100; i+=9) {
+	console.log('counter sekarang = ' + i);
+    if (i % 10 === 0) {
+      console.log(i + ' KELIPATAN 10');
+    }
 }
 
-for (i2 = 1; i2 <= 100; i2++){
-  if(i2 % 5 === 0){
-      console.log(i2 + " KELIPATAN 5");
-  }
-}
-
-for (i3 = 1; i3 <= 100; i3++){
-  if(i3 % 9 === 0){
-      console.log(i3 + " KELIPATAN 9");
-  }
-}
 
